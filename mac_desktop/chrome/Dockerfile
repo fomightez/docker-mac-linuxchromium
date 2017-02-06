@@ -13,9 +13,18 @@
 #   dependencies installed. It uses native X11 unix socket.
 #   Tested on Debian Jessie
 #   On a Mac running OSX 10.9.5 with Docker Toolbox and socat and XQuartz
-# USAGE:
+# EASIEST USAGE, USE PRE-BUILT IMAGE:
 #   # Run ephemeral on Mac
 #   docker run -e DISPLAY=192.168.99.1:0 -v $HOME/Downloads:/root/Downloads --name chrome fomightez/chromium
+#
+# # Build your own and run it:
+#   # Download Chromium Dockerfile
+#   wget http://raw.githubusercontent.com/fomightez/dockerfiles/master/mac_desktop/chrome/Dockerfile
+#   # Build chromium image
+#   docker build -t chromium .
+#
+#   # Run ephemeral on Mac
+#   docker run -e DISPLAY=192.168.99.1:0 -v $HOME/Downloads:/root/Downloads --name chrome chromium
 
 # Base docker image
 FROM debian:jessie
