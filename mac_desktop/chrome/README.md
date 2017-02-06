@@ -2,7 +2,7 @@ Chromium to Mac Screen
 ======================
 
 See associated image at  
-# https://hub.docker.com/r/fomightez/chromium/
+https://hub.docker.com/r/fomightez/chromium/
 
 
 image for a container for Linux chromium with all dependencies that can be tunneled to Mac Desktop
