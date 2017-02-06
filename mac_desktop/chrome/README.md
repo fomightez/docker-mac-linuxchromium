@@ -1,4 +1,4 @@
-Chromium to Mac Screen
+Chromium to Mac Display
 ======================
 
 See associated image at  
