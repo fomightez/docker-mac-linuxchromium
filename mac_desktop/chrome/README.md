@@ -50,11 +50,9 @@ Usage
 
 		docker run -e DISPLAY=192.168.99.1:0 --name gparted jess/gparted
 
-	If all goes well, the focus should go to XQuartz where you will see Linux's gparted running. See `Troubleshooting` below if somemthing else happened.
+	If all goes well, the focus should go to XQuartz where you will see Linux's gparted running. See `Troubleshooting` below if something else happened.
 
 	Select `Quit` from the file menu there to shut the container down. Back in the terminal window, you'll see the normal command line prompt return.
-
-
 
 	Another check is to use Inkscape, that command is
 
