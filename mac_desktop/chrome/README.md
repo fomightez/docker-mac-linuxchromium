@@ -5,10 +5,10 @@ See associated Docker image at
 https://hub.docker.com/r/fomightez/chromium/
 
 
-image for a container for Linux chromium with all dependencies that can be tunneled to Mac Desktop
+Image for a container for Linux chromium with all dependencies that can be tunneled to Mac Desktop
 -------------------------------
 
-[Dockerfile](https://github.com/fomightez/dockerfiles/tree/master/mac_desktop/chrome)  
+[Dockerfile](https://github.com/fomightez/dockerfiles/tree/master/mac_desktop/chrome)
 
 Dockerfile for the image adapted from [here](https://github.com/docker/docker/tree/b248de7e332b6e67b08a8981f68060e6ae629ccf/contrib/desktop-integration/chromium) because that one worked whereas the version that is presently at the [source of the other images](https://hub.docker.com/u/jess/) I am pulling doesn't work. Specifically, since present version of this [particular one](https://github.com/jessfraz/dockerfiles/blob/master/chromium/Dockerfile) seems to fail at this time. I only changed the comments section of the original Dockerfile.
 
@@ -17,7 +17,7 @@ Process to use and examples based on following [Bring Linux apps to the Mac Desk
 Usage
 --------
 
-1. Install the necessary software following: [Bring Linux apps to the Mac Desktop with Docker](http://blog.alexellis.io/linux-desktop-on-mac/) and [How to run a Linux GUI application on OSX using Docker](http://kartoza.com/en/blog/how-to-run-a-linux-gui-application-on-osx-using-docker/) . Essentially you'll need working Docker, socat, and XQuartz. 
+1. Install the necessary software following: [Bring Linux apps to the Mac Desktop with Docker](http://blog.alexellis.io/linux-desktop-on-mac/) and [How to run a Linux GUI application on OSX using Docker](http://kartoza.com/en/blog/how-to-run-a-linux-gui-application-on-osx-using-docker/) . Essentially you'll need working Docker, socat, and XQuartz.
 
 	Notes:
 	* I am doing this on a computer running OSX 10.9.5 (Mavericks), and so I used Docker Toolbox from Docker.com. Docker.com suggests their newer software, Docker for Mac, if you can run it.
@@ -40,7 +40,7 @@ Usage
 
 4. You need to get an IP address from your local Mac that you'll need to use for the `docker run` commands below, you need to replace the part in from of the `:0` in `192.168.99.1:0` in the commands below with the second address listed when you issue the command
 
-	ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+		ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
 
 5. That completes the preparation and analysis on your Mac system. Now you are ready to step through actually running the Linux container and piping it out to your Mac screen.
 
@@ -66,7 +66,7 @@ Usage
 
 6. Now use this Docker image to try Chromium.
 
-	docker run -e DISPLAY=192.168.99.1:0 -v $HOME/Downloads:/root/Downloads --name chrome fomightez/chromium
+		docker run -e DISPLAY=192.168.99.1:0 -v $HOME/Downloads:/root/Downloads --name chrome fomightez/chromium
 
 	*Remember to replace the IP address in the command with yours, keeping the `:0` after it.*
 
