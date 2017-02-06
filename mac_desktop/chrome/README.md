@@ -1,7 +1,7 @@
-Chromium to Mac Display
-======================
+Linux Chromium to Mac Display using Docker
+===================================
 
-See associated image at  
+See associated Docker image at  
 https://hub.docker.com/r/fomightez/chromium/
 
 
