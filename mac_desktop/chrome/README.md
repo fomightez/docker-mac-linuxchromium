@@ -105,6 +105,6 @@ Related
 
 [First Touch Down with Docker for Mac](https://blog.hypriot.com/post/first-touch-down-with-docker-for-mac/) says you can send programs running from in a raspberry pi container to Mac OS display
 
-[Docker Containers on the Desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/) says you can send program running in a Linux container out to a Linux computers display
+[Docker Containers on the Desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/) says you can send program running in a Linux container out to display on a native Linux computer
 
 I imagine ultimately Windows will be possible in this ability to go between systems will include Windows-based systems, I understand [Docker in Windows development is nascent and only works on a few versions for now](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/).
