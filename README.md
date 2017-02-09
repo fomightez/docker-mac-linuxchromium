@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/fomightez/chromium.svg)](https://microbadger.com/images/fomightez/chromium "Get your own image badge on microbadger.com")
+
 Linux Chromium to Mac Display using Docker
 ===================================
 
