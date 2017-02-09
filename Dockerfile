@@ -28,7 +28,7 @@
 
 # Base docker image
 FROM debian:jessie
-MAINTAINER Jessica Frazelle <jess@docker.com>
+MAINTAINER Wayne Decatur
 
 # Install Chromium
 RUN apt-get update && apt-get install -y \
