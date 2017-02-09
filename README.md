@@ -8,7 +8,7 @@ https://hub.docker.com/r/fomightez/chromium/
 Image for a container for Linux chromium with all dependencies that can be tunneled to Mac Desktop
 -------------------------------
 
-[Dockerfile](https://github.com/fomightez/dockerfiles/tree/master/mac_desktop/chrome)
+[Dockerfile](https://github.com/fomightez/docker-mac-linuxchromium)
 
 Dockerfile for the image adapted from [here](https://github.com/docker/docker/tree/b248de7e332b6e67b08a8981f68060e6ae629ccf/contrib/desktop-integration/chromium) because that one worked whereas the version that is presently at the [source of the other images](https://hub.docker.com/u/jess/) I am pulling doesn't work. Specifically, since present version of this [particular one](https://github.com/jessfraz/dockerfiles/blob/master/chromium/Dockerfile) seems to fail at this time. I only changed the comments section of the original Dockerfile.
 
@@ -76,7 +76,7 @@ Usage
 Troubleshooting and cleaning up
 -------------------------------
 
-If you try to run a Docker image unsuccesfully or successfuly, it may still create a visible entry you'll see when you enter `docker ps -a` to list docker jobs.
+If you try to run a Docker image unsuccessfully or successfully, it may still create a visible entry you'll see when you enter `docker ps -a` to list docker jobs.
 
 Therefore if you get an error that begins
 
